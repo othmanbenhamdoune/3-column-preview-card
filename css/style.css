@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+:root{
+    --orange-color:hsl(31, 77%, 52%);
+    --dark-cyan:hsl(184, 100%, 22%);
+    --very-dark-cayn:hsl(179, 100%, 13%);
+    --paragraph-color:hsla(0, 0%, 100%, 0.75);
+    --light-gray:hsl(0, 0%, 95%);
+}
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--light-gray);
+}
+.container{
+    margin: 4% auto;
+    width: 90%;
+    height: auto ;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    font-size: 15px;
+}
+.container .card{
+    width: calc(100%/3);
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 50px;
+    color:var(--paragraph-color);
+    font-family: "lexend deca";
+    font-weight: 400;
+}
+.container .card img{
+    width:70px;
+    
+}
+.container .card h1{
+    font-family: "Big Shoulders Display";
+    font-size: 45px;
+    color:var(--light-gray);
+}
+.container .card p{
+    line-height: 2rem;
+}
+.container .card input{
+    width:80%;
+    height: 50px;
+    border-radius: 25px;
+    border:none;
+    background-color:var(--light-gray);
+    font-family:"lexend deca";
+    margin-top:40px;
+}
+.card-1{
+    background-color:var(--orange-color);
+    border-radius: 10px 0px 0px 10px;
+
+}
+.card-1 input{
+    color:var(--orange-color);
+}
+/*card-2*/
+.card-2{
+    background-color:var(--dark-cyan);
+}
+.card-2 input{
+    color:var(--dark-cyan);
+}
+/*card-3*/
+.card-3 {
+    background-color: var(--very-dark-cayn);
+    border-radius: 0px 10px 10px 0px;
+}
+.card-3 input {
+    color:var(--very-dark-cayn);
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+  
+/*media queries */
+@media screen and (max-width:375px) {
+    .container{
+        display: flex;
+        flex-direction:column;
+        width: 90%;
+        height: auto;
+    
+    }
+    .container .card {
+        width: 100%;
+    }
+    .card-1{
+        border-radius: 10px 10px 0px 0px;
+    }
+    .card-3 {
+        border-radius:0px 0px 10px 10px ;
+    }
+
+}
